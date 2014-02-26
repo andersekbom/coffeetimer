@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Cafenio coffee timer</title>
+        <meta http-equiv="refresh" content="3600">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <link rel="shortcut icon" href="static/favicon.ico">
+        <script>
+
+        var params = {};
+
+        if (location.search) {
+            var parts = location.search.substring(1).split('&');
+
+            for (var i = 0; i < parts.length; i++) {
+                var nv = parts[i].split('=');
+                if (!nv[0]) continue;
+                params[nv[0]] = nv[1] || true;
+            }
+        }
+
+        // Now you can get the parameters you want like so:
+        var siteID = params.siteID;
+
+        setInterval(function(){loadXMLDoc()},5000);
+
+        function loadXMLDoc()
+        {
+            xmlhttp=new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    xmlDoc=xmlhttp.responseXML;
+
+                    x=xmlDoc.getElementsByTagName("NUM1");
+                    num1 = x[0].childNodes[0].nodeValue;
+                    x=xmlDoc.getElementsByTagName("NUM2");
+                    num2 = x[0].childNodes[0].nodeValue;
+                    x=xmlDoc.getElementsByTagName("TEXT");
+                    text = x[0].childNodes[0].nodeValue;
+
+		    if(text.indexOf(".") != -1){
+			text=".";
+		    }else{
+			text= "&nbsp;";
+		    }
+
+                    document.getElementById("num1").src='static/' + num1 + '.png';
+                    document.getElementById("num2").src='static/' + num2 + '.png';
+                    document.getElementById("text").innerHTML=text;
+                }
+            }
+            xmlhttp.open("GET","static/9262.xml",false);
+            xmlhttp.send();
+        }
+        </script>
+        <style>
+
+            #main{
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0px;
+                border-radius: 15px;
+                width: 970px;
+                background-color: #b0e0e6; 
+                text-align: center;
+            }
+
+            #num1,#num2{
+                width: 500px;
+                margin-bottom: -200px;
+                margin-top: -65px;
+            }
+
+            #text{
+		font-size: 140px;
+		font-family: helvetica;
+		color: black;
+            }
+            
+        </style>
+    </head>
+    <body id="body" background="static/cafenio_logo_inverted.png" bgcolor="#000000" onload="loadXMLDoc();">
+        <div id="main">
+            <img id="num1" src="static/line.png" style="margin-right:-25px;">
+            <img id="num2" src="static/line.png" style="margin-left:-25px;"><br>
+            <span id="text">Connecting...</span><br>
+        </div>
+        
+    </body>
+</html>

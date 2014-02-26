@@ -1,0 +1,48 @@
+{"Departures":
+    {"xmlnsxsi":"http:\/\/www.w3.org\/2001\/XMLSchema-instance",
+    "xmlnsxsd":"http:\/\/www.w3.org\/2001\/XMLSchema",
+    "xmlns":"http:\/\/www1.sl.se\/realtidws\/",
+    "LatestUpdate":"2013-11-23T14:34:57.8888954+01:00",
+    "ExecutionTime":"00:00:00",
+    "Buses":{},
+    "Metros":
+    {"Metro":
+        [
+            {
+                "SiteId":"9262",
+                "TransportMode":"METRO",
+                "StationName":"Hägerstensåsen",
+                "GroupOfLine":"Tunnelbanans röda linje",
+                "DisplayRow1":"14  Fruängen",
+                "DisplayRow2":{}
+            },
+            {
+                "SiteId":"9262",
+                "TransportMode":"METRO",
+                "StationName":"Hägerstensåsen",
+                "GroupOfLine":"Tunnelbanans röda linje",
+                "DisplayRow1":"14  Mörby centrum 2 min.",
+                "DisplayRow2":"14 Mörby centrum  12 min.      14 Mörby centrum  22 min."
+            }
+        ]
+    },
+    "Trains":{},
+    "Trams":{},
+    "TrainError":{
+        "HasError":"true",
+        "FaultCode":"Client",
+        "ErrorLevel":"Error",
+        "ErrorCode":"1000",
+        "ErrorSource":"\/realtidws\/RealTimeService.asmx\/GetDepartures",
+        "ErrorMessage":"Connection string is missing"
+        },
+    "TramError":{
+        "HasError":"true",
+        "FaultCode":"Client",
+        "ErrorLevel":"Error",
+        "ErrorCode":"1000",
+        "ErrorSource":"\/realtidws\/RealTimeService.asmx\/GetDepartures",
+        "ErrorMessage":"Connection string is missing"
+        }
+    }
+}

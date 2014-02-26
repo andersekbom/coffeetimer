@@ -1,0 +1,45 @@
+<Departure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LatestUpdate>2013-11-12T09:08:29.3325545+01:00</LatestUpdate>
+  <ExecutionTime>00:00:00.0156258</ExecutionTime>
+  <Buses></Buses>
+  <Metros>
+    <Metro>
+      <SiteId>9262</SiteId>
+      <TransportMode>METRO</TransportMode>
+      <StationName>Hägerstensåsen</StationName>
+      <GroupOfLine>Tunnelbanans röda linje</GroupOfLine>
+      <DisplayRow1>14  Fruängen 10 min</DisplayRow1>
+      <DisplayRow2>Pendeltågen: Stopp mellan Älvsjö och Stockholm C pga olyckshändelse, ersättnings bussar mellan Älvsjö - Telefonplan.</DisplayRow2>
+    </Metro>
+    <Metro>
+      <SiteId>9262</SiteId>
+      <TransportMode>METRO</TransportMode>
+      <StationName>Hägerstensåsen</StationName>
+      <GroupOfLine>Tunnelbanans röda linje</GroupOfLine>
+      <DisplayRow1></DisplayRow1>
+      <DisplayRow2>Pendeltågen: Stopp mellan Älvsjö och Stockholm C pga olyckshändelse, ersättnings bussar mellan Älvsjö - Telefonplan.</DisplayRow2>
+    </Metro>
+  </Metros>
+    <data>
+        <country name="Liechtenstein">
+            <rank>1</rank>
+            <year>2008</year>
+            <gdppc>141100</gdppc>
+            <neighbor name="Austria" direction="E"/>
+            <neighbor name="Switzerland" direction="W"/>
+        </country>
+        <country name="Singapore">
+            <rank>4</rank>
+            <year>2011</year>
+            <gdppc>59900</gdppc>
+            <neighbor name="Malaysia" direction="N"/>
+        </country>
+        <country name="Panama">
+            <rank>68</rank>
+            <year>2011</year>
+            <gdppc>13600</gdppc>
+            <neighbor name="Costa Rica" direction="W"/>
+            <neighbor name="Colombia" direction="E"/>
+        </country>
+    </data>
+</Departure>

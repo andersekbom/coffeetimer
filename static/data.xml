@@ -1,0 +1,41 @@
+<Departure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www1.sl.se/realtidws/">
+  <LatestUpdate>2013-11-12T09:08:29.3325545+01:00</LatestUpdate>
+  <ExecutionTime>00:00:00.0156258</ExecutionTime>
+  <Buses></Buses>
+  <Metros>
+    <Metro>
+      <SiteId>9262</SiteId>
+      <TransportMode>METRO</TransportMode>
+      <StationName>Hägerstensåsen</StationName>
+      <GroupOfLine>Tunnelbanans röda linje</GroupOfLine>
+      <DisplayRow1>14  Fruängen 10 min</DisplayRow1>
+      <DisplayRow2>Pendeltågen: Stopp mellan Älvsjö och Stockholm C pga olyckshändelse, ersättnings bussar mellan Älvsjö - Telefonplan.</DisplayRow2>
+    </Metro>
+    <Metro>
+      <SiteId>9262</SiteId>
+      <TransportMode>METRO</TransportMode>
+      <StationName>Hägerstensåsen</StationName>
+      <GroupOfLine>Tunnelbanans röda linje</GroupOfLine>
+      <DisplayRow1></DisplayRow1>
+      <DisplayRow2>Pendeltågen: Stopp mellan Älvsjö och Stockholm C pga olyckshändelse, ersättnings bussar mellan Älvsjö - Telefonplan.</DisplayRow2>
+    </Metro>
+  </Metros>
+  <Trains></Trains>
+  <Trams></Trams>
+  <TrainError>
+    <HasError>true</HasError>
+    <FaultCode>Client</FaultCode>
+    <ErrorLevel>Error</ErrorLevel>
+    <ErrorCode>1000</ErrorCode>
+    <ErrorSource>/realtidws/RealTimeService.asmx/GetDepartures</ErrorSource>
+    <ErrorMessage>Connection string is missing</ErrorMessage>
+  </TrainError>
+  <TramError>
+    <HasError>true</HasError>
+    <FaultCode>Client</FaultCode>
+    <ErrorLevel>Error</ErrorLevel>
+    <ErrorCode>1000</ErrorCode>
+    <ErrorSource>/realtidws/RealTimeService.asmx/GetDepartures</ErrorSource>
+    <ErrorMessage>Connection string is missing</ErrorMessage>
+  </TramError>
+</Departure>
